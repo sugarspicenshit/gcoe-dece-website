@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.header-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-container-top {
+    position: relative;
+    padding-top: 400px;
+    padding-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    z-index: -2;
+    flex: 1;
+}
+
+.content-container {
+    position: relative;
+    padding-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    z-index: -2;
+    flex: 1;
+}
+
+.footer-container {
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-bg {
+    position: absolute;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    background-color: rgba(0, 112, 60, 1);
+}
+
+.footer-text {
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
