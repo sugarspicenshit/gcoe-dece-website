@@ -1,322 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <title>
-      Department of Electronics and Computer Engineering - De La Salle
-      University
-    </title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
 
-      .header-container {
-        position: absolute;
-        margin-top: 50px;
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-      }
-      .header-img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        z-index: -1;
-      }
-      .dark-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-      }
-      .header-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 50px;
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <title>
+    Department of Electronics and Computer Engineering - De La Salle
+    University
+  </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-      .content-container {
-        position: relative;
-        padding-top: 400px;
-        padding-bottom: 35px;
-        margin-right: auto;
-        margin-left: auto;
-        width: 80%;
-        z-index: -2;
-        flex: 1;
-      }
+    .header-container {
+      position: absolute;
+      margin-top: 50px;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
 
-      .content-container-dark {
-        background-color: #444;
-        color: #fff;
-      }
+    .header-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: -1;
+    }
 
-      .footer-container {
-        position: relative;
-        margin-top: 50px;
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .footer-bg {
-        position: absolute;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 50px;
-        background-color: rgba(0, 112, 60, 1);
-      }
-      .footer-text {
-        color: white;
-      }
-      .navbar {
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/De_La_Salle_University_Seal.svg/800px-De_La_Salle_University_Seal.svg.png"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                >Expected Lasallian Graduate Attributes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Student Outcomes</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+    .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .content-container-top {
+      position: relative;
+      padding-top: 400px;
+      padding-bottom: 35px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      z-index: -2;
+      flex: 1;
+    }
+
+    .content-container {
+      position: relative;
+      padding-bottom: 35px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      z-index: -2;
+      flex: 1;
+    }
+
+    .content-container-dark {
+      position: relative;
+      padding-bottom: 35px;
+      width: 100%;
+      z-index: -2;
+      flex: 1;
+      background-color: #444;
+      color: #fff;
+    }
+
+    .footer-container {
+      position: relative;
+      margin-top: 50px;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .footer-bg {
+      position: absolute;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-bottom: 50px;
+      background-color: rgba(0, 112, 60, 1);
+    }
+
+    .footer-text {
+      color: white;
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/De_La_Salle_University_Seal.svg/800px-De_La_Salle_University_Seal.svg.png"
+          width="30" height="30" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Expected Lasallian Graduate Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Student Outcomes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--header container-->
+  <div class="header-container">
+    <!--header image-->
+    <img
+      src="https://images.unsplash.com/photo-1518929298724-d38d4e506f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=70"
+      class="header-img" />
+    <!--darken image-->
+    <div class="dark-overlay"></div>
+    <!--header text-->
+    <p class="header-text">Department of Electronics and Computer Engineering</p>
+  </div>
+  <!--main content container-->
+  <div class="content-container-top">
+    <div class="row justify-content-right">
+      <h2>Vision</h2>
+      <p>
+        The Department of Electronics and Computer Engineering offers Electronics Engineering (ECE) and Computer
+        Engineering
+        (CpE) programs. The department envisions the ECE and CpE graduates as competent and ethical professionals in the
+        area
+        they have chosen. For the ECE, the areas are in Electronics, Communications, and Digital Signal Processing. For
+        the CpE,
+        the areas are in Embedded Systems, Computer Hardware Architecture, Computer Networks, Multimedia Systems and
+        Machine
+        Learning.
+      </p>
+    </div>
+  </div>
+  <div class="content-container-bg-dark">
+      <div class="content-container">
+          <div class="row justify-content-right">
+            <h2>Mission</h2>
+            <p>
+              The Mission of the Department of Electronic and Computer Engineering is to mold and nurture ECE and CpE
+              professional engineers with strong sense of nationalism and who are highly competent in various field of
+              electronics, communications and computer such as telecommunications, broadcasting and other communications
+              engineering technologies; industrial electronics and instrumentation; semiconductor applications, manufacture
+              and test engineering; systems analysis and controls engineering, software and hardware engineering, especially
+              the students, towards becoming:
+            </p>
+            <ol style="list-style-type: decimal;">
+              <li>Professionals living the La Sallian values of Religio, Mores and Cultura;</li>
+              <li>Professionals committed to the improvement of the Filipino’s quality of life;</li>
+              <li>Professionals devoted to the standards and dignity of the ECE and CpE professions; and</li>
+              <li>Professionals with a strong sense of nationalism responding to needs of the country and its people.</li>
+            </ol>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!--header container-->
-    <div class="header-container">
-      <!--header image-->
-      <img
-        src="https://images.unsplash.com/photo-1518929298724-d38d4e506f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=70"
-        class="header-img"
-      />
-      <!--darken image-->
-      <div class="dark-overlay"></div>
-      <!--header text-->
-      <p class="header-text">Department of Lorem Engineering</p>
+  </div>
+  <div class="content-container">
+    <div class="row justify-content-right">
+      <h2>Program History</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
+        nisl a neque facilisis sodales. Donec egestas vel mi sit amet feugiat.
+        Suspendisse lacinia mi in tempus lobortis. Sed elementum gravida
+        tellus in malesuada. Nam et metus lorem. Aenean quis commodo eros.
+        Etiam consectetur massa enim, quis lacinia risus sodales a.
+        Pellentesque imperdiet molestie nisi, et vestibulum massa fermentum
+        at. Donec sollicitudin ex rutrum nibh gravida, ut rhoncus metus
+        pulvinar. Maecenas suscipit, libero vel vulputate volutpat, elit sem
+        fermentum turpis, at blandit ligula tortor feugiat metus. Vivamus ac
+        mollis eros. Quisque libero sem, suscipit quis placerat id, vehicula
+        ut dolor. Aliquam eget est imperdiet mauris gravida mollis eget eu
+        arcu. Quisque maximus, orci sed venenatis fringilla, sapien tortor
+        tincidunt turpis, sed faucibus orci ipsum sit amet tellus. In eros
+        felis, vehicula a nisl et, viverra varius dolor. Proin malesuada dui a
+        justo posuere congue nec ac erat. Nulla efficitur faucibus elit eget
+        aliquam. In imperdiet luctus imperdiet. Maecenas porttitor consequat
+        libero, non imperdiet velit. In a congue odio. Aenean tempor tempor
+        gravida. Quisque volutpat blandit tellus non faucibus. Quisque tempus
+        velit nec lorem dignissim congue. Sed in neque magna. Pellentesque
+        vitae ipsum viverra, rutrum nulla sit amet, tincidunt neque. Nulla
+        tincidunt nunc ac sodales aliquam. Nulla facilisi. Vestibulum aliquam
+        eleifend tincidunt. Curabitur a imperdiet nisi, at viverra diam. Nunc
+        sodales justo quis accumsan porta. Nam vitae elit vitae sapien
+        suscipit lobortis non id arcu. Sed ex dolor, molestie nec commodo
+        quis, pulvinar ut turpis. Quisque urna dolor, vestibulum non diam non,
+        malesuada tempus odio. Proin varius velit id molestie aliquet.
+        Vestibulum scelerisque placerat congue. Nullam ornare faucibus justo,
+        a cursus velit tincidunt eu. Vestibulum malesuada lobortis enim, a
+        vestibulum dui placerat non. In euismod, mi ac consectetur
+        pellentesque, nisi leo rutrum augue, non tincidunt justo justo ut
+        dolor. Nulla tincidunt urna mi, ac interdum mauris congue ac.
+        Curabitur pretium neque sit amet purus dictum, eu aliquet dolor
+        vehicula. Morbi molestie placerat ipsum, a finibus neque dignissim et.
+        Ut sapien dolor, ultricies ac lacus id, viverra consectetur mauris.
+        Quisque in libero at felis egestas cursus. Ut purus tellus, cursus ut
+        tortor vel, accumsan sollicitudin turpis. Quisque auctor imperdiet leo
+        non bibendum. Donec quis lacus ac metus luctus pharetra vitae id urna.
+        Proin id nunc est. Vestibulum odio nulla, feugiat at ullamcorper vel,
+        rutrum ac risus. Aliquam et ligula diam. Phasellus ut egestas ante.
+        Fusce et mattis ligula, in placerat nisi. Nunc at commodo nulla. Duis
+        condimentum in nibh ut porta. Nam in metus metus.
+      </p>
     </div>
-    <!--main content container-->
-    <div class="content-container">
-      <div class="row justify-content-right">
-        <h2>Vision</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-          nisl a neque facilisis sodales. Donec egestas vel mi sit amet feugiat.
-          Suspendisse lacinia mi in tempus lobortis. Sed elementum gravida
-          tellus in malesuada. Nam et metus lorem. Aenean quis commodo eros.
-          Etiam consectetur massa enim, quis lacinia risus sodales a.
-          Pellentesque imperdiet molestie nisi, et vestibulum massa fermentum
-          at. Donec sollicitudin ex rutrum nibh gravida, ut rhoncus metus
-          pulvinar. Maecenas suscipit, libero vel vulputate volutpat, elit sem
-          fermentum turpis, at blandit ligula tortor feugiat metus. Vivamus ac
-          mollis eros. Quisque libero sem, suscipit quis placerat id, vehicula
-          ut dolor. Aliquam eget est imperdiet mauris gravida mollis eget eu
-          arcu. Quisque maximus, orci sed venenatis fringilla, sapien tortor
-          tincidunt turpis, sed faucibus orci ipsum sit amet tellus. In eros
-          felis, vehicula a nisl et, viverra varius dolor. Proin malesuada dui a
-          justo posuere congue nec ac erat. Nulla efficitur faucibus elit eget
-          aliquam. In imperdiet luctus imperdiet. Maecenas porttitor consequat
-          libero, non imperdiet velit. In a congue odio. Aenean tempor tempor
-          gravida. Quisque volutpat blandit tellus non faucibus. Quisque tempus
-          velit nec lorem dignissim congue. Sed in neque magna. Pellentesque
-          vitae ipsum viverra, rutrum nulla sit amet, tincidunt neque. Nulla
-          tincidunt nunc ac sodales aliquam. Nulla facilisi. Vestibulum aliquam
-          eleifend tincidunt. Curabitur a imperdiet nisi, at viverra diam. Nunc
-          sodales justo quis accumsan porta. Nam vitae elit vitae sapien
-          suscipit lobortis non id arcu. Sed ex dolor, molestie nec commodo
-          quis, pulvinar ut turpis. Quisque urna dolor, vestibulum non diam non,
-          malesuada tempus odio. Proin varius velit id molestie aliquet.
-          Vestibulum scelerisque placerat congue. Nullam ornare faucibus justo,
-          a cursus velit tincidunt eu. Vestibulum malesuada lobortis enim, a
-          vestibulum dui placerat non. In euismod, mi ac consectetur
-          pellentesque, nisi leo rutrum augue, non tincidunt justo justo ut
-          dolor. Nulla tincidunt urna mi, ac interdum mauris congue ac.
-          Curabitur pretium neque sit amet purus dictum, eu aliquet dolor
-          vehicula. Morbi molestie placerat ipsum, a finibus neque dignissim et.
-          Ut sapien dolor, ultricies ac lacus id, viverra consectetur mauris.
-          Quisque in libero at felis egestas cursus. Ut purus tellus, cursus ut
-          tortor vel, accumsan sollicitudin turpis. Quisque auctor imperdiet leo
-          non bibendum. Donec quis lacus ac metus luctus pharetra vitae id urna.
-          Proin id nunc est. Vestibulum odio nulla, feugiat at ullamcorper vel,
-          rutrum ac risus. Aliquam et ligula diam. Phasellus ut egestas ante.
-          Fusce et mattis ligula, in placerat nisi. Nunc at commodo nulla. Duis
-          condimentum in nibh ut porta. Nam in metus metus.
-        </p>
+  </div>
+  <!--header container-->
+  <div class="footer-bg">
+    <div class="footer-container">
+      <div class="footer-text">
+        <p>Test 1</p>
+        <p>Test 2</p>
+        <p>Test 3</p>
       </div>
     </div>
-    <div class="content-container content-container-dark">
-      <div class="row justify-content-right">
-        <h2>Mission</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-          nisl a neque facilisis sodales. Donec egestas vel mi sit amet feugiat.
-          Suspendisse lacinia mi in tempus lobortis. Sed elementum gravida
-          tellus in malesuada. Nam et metus lorem. Aenean quis commodo eros.
-          Etiam consectetur massa enim, quis lacinia risus sodales a.
-          Pellentesque imperdiet molestie nisi, et vestibulum massa fermentum
-          at. Donec sollicitudin ex rutrum nibh gravida, ut rhoncus metus
-          pulvinar. Maecenas suscipit, libero vel vulputate volutpat, elit sem
-          fermentum turpis, at blandit ligula tortor feugiat metus. Vivamus ac
-          mollis eros. Quisque libero sem, suscipit quis placerat id, vehicula
-          ut dolor. Aliquam eget est imperdiet mauris gravida mollis eget eu
-          arcu. Quisque maximus, orci sed venenatis fringilla, sapien tortor
-          tincidunt turpis, sed faucibus orci ipsum sit amet tellus. In eros
-          felis, vehicula a nisl et, viverra varius dolor. Proin malesuada dui a
-          justo posuere congue nec ac erat. Nulla efficitur faucibus elit eget
-          aliquam. In imperdiet luctus imperdiet. Maecenas porttitor consequat
-          libero, non imperdiet velit. In a congue odio. Aenean tempor tempor
-          gravida. Quisque volutpat blandit tellus non faucibus. Quisque tempus
-          velit nec lorem dignissim congue. Sed in neque magna. Pellentesque
-          vitae ipsum viverra, rutrum nulla sit amet, tincidunt neque. Nulla
-          tincidunt nunc ac sodales aliquam. Nulla facilisi. Vestibulum aliquam
-          eleifend tincidunt. Curabitur a imperdiet nisi, at viverra diam. Nunc
-          sodales justo quis accumsan porta. Nam vitae elit vitae sapien
-          suscipit lobortis non id arcu. Sed ex dolor, molestie nec commodo
-          quis, pulvinar ut turpis. Quisque urna dolor, vestibulum non diam non,
-          malesuada tempus odio. Proin varius velit id molestie aliquet.
-          Vestibulum scelerisque placerat congue. Nullam ornare faucibus justo,
-          a cursus velit tincidunt eu. Vestibulum malesuada lobortis enim, a
-          vestibulum dui placerat non. In euismod, mi ac consectetur
-          pellentesque, nisi leo rutrum augue, non tincidunt justo justo ut
-          dolor. Nulla tincidunt urna mi, ac interdum mauris congue ac.
-          Curabitur pretium neque sit amet purus dictum, eu aliquet dolor
-          vehicula. Morbi molestie placerat ipsum, a finibus neque dignissim et.
-          Ut sapien dolor, ultricies ac lacus id, viverra consectetur mauris.
-          Quisque in libero at felis egestas cursus. Ut purus tellus, cursus ut
-          tortor vel, accumsan sollicitudin turpis. Quisque auctor imperdiet leo
-          non bibendum. Donec quis lacus ac metus luctus pharetra vitae id urna.
-          Proin id nunc est. Vestibulum odio nulla, feugiat at ullamcorper vel,
-          rutrum ac risus. Aliquam et ligula diam. Phasellus ut egestas ante.
-          Fusce et mattis ligula, in placerat nisi. Nunc at commodo nulla. Duis
-          condimentum in nibh ut porta. Nam in metus metus.
-        </p>
-      </div>
-    </div>
-    <div class="content-container">
-      <div class="row justify-content-right">
-        <h2>Program History</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-          nisl a neque facilisis sodales. Donec egestas vel mi sit amet feugiat.
-          Suspendisse lacinia mi in tempus lobortis. Sed elementum gravida
-          tellus in malesuada. Nam et metus lorem. Aenean quis commodo eros.
-          Etiam consectetur massa enim, quis lacinia risus sodales a.
-          Pellentesque imperdiet molestie nisi, et vestibulum massa fermentum
-          at. Donec sollicitudin ex rutrum nibh gravida, ut rhoncus metus
-          pulvinar. Maecenas suscipit, libero vel vulputate volutpat, elit sem
-          fermentum turpis, at blandit ligula tortor feugiat metus. Vivamus ac
-          mollis eros. Quisque libero sem, suscipit quis placerat id, vehicula
-          ut dolor. Aliquam eget est imperdiet mauris gravida mollis eget eu
-          arcu. Quisque maximus, orci sed venenatis fringilla, sapien tortor
-          tincidunt turpis, sed faucibus orci ipsum sit amet tellus. In eros
-          felis, vehicula a nisl et, viverra varius dolor. Proin malesuada dui a
-          justo posuere congue nec ac erat. Nulla efficitur faucibus elit eget
-          aliquam. In imperdiet luctus imperdiet. Maecenas porttitor consequat
-          libero, non imperdiet velit. In a congue odio. Aenean tempor tempor
-          gravida. Quisque volutpat blandit tellus non faucibus. Quisque tempus
-          velit nec lorem dignissim congue. Sed in neque magna. Pellentesque
-          vitae ipsum viverra, rutrum nulla sit amet, tincidunt neque. Nulla
-          tincidunt nunc ac sodales aliquam. Nulla facilisi. Vestibulum aliquam
-          eleifend tincidunt. Curabitur a imperdiet nisi, at viverra diam. Nunc
-          sodales justo quis accumsan porta. Nam vitae elit vitae sapien
-          suscipit lobortis non id arcu. Sed ex dolor, molestie nec commodo
-          quis, pulvinar ut turpis. Quisque urna dolor, vestibulum non diam non,
-          malesuada tempus odio. Proin varius velit id molestie aliquet.
-          Vestibulum scelerisque placerat congue. Nullam ornare faucibus justo,
-          a cursus velit tincidunt eu. Vestibulum malesuada lobortis enim, a
-          vestibulum dui placerat non. In euismod, mi ac consectetur
-          pellentesque, nisi leo rutrum augue, non tincidunt justo justo ut
-          dolor. Nulla tincidunt urna mi, ac interdum mauris congue ac.
-          Curabitur pretium neque sit amet purus dictum, eu aliquet dolor
-          vehicula. Morbi molestie placerat ipsum, a finibus neque dignissim et.
-          Ut sapien dolor, ultricies ac lacus id, viverra consectetur mauris.
-          Quisque in libero at felis egestas cursus. Ut purus tellus, cursus ut
-          tortor vel, accumsan sollicitudin turpis. Quisque auctor imperdiet leo
-          non bibendum. Donec quis lacus ac metus luctus pharetra vitae id urna.
-          Proin id nunc est. Vestibulum odio nulla, feugiat at ullamcorper vel,
-          rutrum ac risus. Aliquam et ligula diam. Phasellus ut egestas ante.
-          Fusce et mattis ligula, in placerat nisi. Nunc at commodo nulla. Duis
-          condimentum in nibh ut porta. Nam in metus metus.
-        </p>
-      </div>
-    </div>
-    <!--header container-->
-    <div class="footer-bg">
-      <div class="footer-container">
-        <div class="footer-text">
-          <p>Test 1</p>
-          <p>Test 2</p>
-          <p>Test 3</p>
-        </div>
-      </div>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
