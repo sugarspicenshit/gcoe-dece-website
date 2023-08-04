@@ -47,6 +47,14 @@ body {
 
 /* Content Styles */
 
+.container {
+    margin-top: 35px;
+}
+
+.container>.row {
+    margin-bottom: 30px;
+}
+
 .content-container {
     position: relative;
     padding-top: 35px;
