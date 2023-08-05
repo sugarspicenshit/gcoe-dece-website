@@ -5,9 +5,15 @@ body {
 
 /* Header Styles */
 
-.header-container {
+.header-container-fill {
     position: relative;
-    /*margin-top: 50px;*/
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.header-container {
+    position: absolute;
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -62,7 +68,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 80%;
-    z-index: -2;
     flex: 1;
 }
 
@@ -101,8 +106,31 @@ body {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set the navbar background to transparent */
     color: white;
+    transition: background-color 0.3s ease;
+    /* Add a transition effect for smooth color change */
+}
+
+/* Transparent navbar */
+.navbar-transparent {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+.navbar-transparent .nav-link {
+    color: white !important;
+}
+
+/* Opaque navbar */
+.navbar.opaque {
+    background-color: white !important;
+    backdrop-filter: none;
+}
+
+.navbar-opaque .nav-link {
+    color: black !important;
 }
 
 .active-button>a {
@@ -111,22 +139,16 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    /* color: var(--bs-accordion-active-color); */
     color: rgba(0, 0, 0, 1);
-    /* background-color: var(--bs-accordion-active-bg); */
     background-color: rgba(0, 0, 0, 0.0);
-    /* box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color); */
     box-shadow: none;
 }
 
 .btn-primary {
-    /* text color */
     --bs-btn-color: black;
     --bs-btn-bg: #fff;
     --bs-btn-border-color: black;
-    /* text color on hover */
     --bs-btn-hover-color: black;
-    /* bg color on hover */
     --bs-btn-hover-bg: #fff;
     --bs-btn-font-weight: bold;
     --bs-btn-hover-border-color: #black;
